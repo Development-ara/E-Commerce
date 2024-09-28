@@ -1,16 +1,105 @@
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('/section1/images/Backgroung_Hero_img.avif');
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.Nav_Bar{
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
 }
-.front_page{
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .brand-logo {
+    color: white;
+    font-size: 1.8rem;
     font-weight: bold;
 }
-.CTA{
-    border-radius: 20px;
-    color: azure;
-    background-color: rgb(20, 103, 220);
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f44336;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('https://via.placeholder.com/1920x600'); /* Replace this URL with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 60px; /* Offset for the fixed navbar */
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Promotional Banner */
+.hero-promo {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.hero-promo p {
+    color: yellow;
 }
