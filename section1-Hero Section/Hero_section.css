@@ -1,0 +1,16 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/section1-Hero Section/images/Backgroung_Hero_img.avif');
+}
+.Nav_Bar{
+    
+}
+.front_page{
+    font-weight: bold;
+}
+.CTA{
+    border-radius: 20px;
+    color: azure;
+    background-color: rgb(20, 103, 220);
+}
